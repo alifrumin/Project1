@@ -1,31 +1,35 @@
 $(document).ready(function(){
-
+  console.log($("#colorBox").css("background"));
   //Array of Question Objects
   colorPrompts = [burlywood, salmon];
 
   //Length of Question Array for Number of Questions
   $("#totalQuestions").append(colorPrompts.length);
-  
+
   //check answer
   $(".submit").on("click", function(){
     if
-    (($(".answer").val()) == "orange")
+    (($(".answer").val()) == ($("#colorBox").css("background")))
     {console.log("correct")}
     if
-    (($(".answer").val()) !== "orange")
+    (($(".answer").val()) !== ($("#colorBox").css("background")))
     {console.log("incorrect, try the Hint!")}
   });
+
   //Display Hint when Hint Button Clicked
   $(".hintButton").on("click", function(){
     $(".hintDisplay").toggle()
   });
-//Questions Objects
+
+  //Questions Objects
   var burlywood = {
-    colorBox:"burlywood",
+    colorBoxColor:"burlywood",
     hint:"Rhymes with Twirly Hood",
   };
+
   var salmon = {
-    colorBox:"salmon",
+    colorBoxColor:"salmon",
     hint:"Like the fish",
   };
+
 });
