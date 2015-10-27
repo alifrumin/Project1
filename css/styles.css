@@ -1,5 +1,7 @@
 
-
+.container {
+  margin: 10px;
+}
 #colorBox {
   border: 3px solid black;
   height: 150px;
@@ -10,21 +12,10 @@
   border-radius: 50%;
 }
 
-h1 {
-  text-align: center;
-}
-
-h4 {
-  margin: 0;
-  display: inline;
-}
-
-h3 {
-
-}
 .hintSpace {
-  height: 60px;
+  height: 50px;
 }
+
 .hintDisplay {
   display: none;
   color: black;
@@ -35,12 +26,16 @@ h3 {
   text-align: center; i
 }
 
-a {
+.question a {
   display: block;
+  margin: 10px;
 }
 
-#answeredQ {
-  display: inline;
-  padding: 0;
+h1 {
+  text-align: center;
+}
+
+h4 {
   margin: 0;
+  display: inline;
 }

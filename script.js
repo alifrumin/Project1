@@ -1,8 +1,13 @@
 $(document).ready(function(){
   i=0;
   correct=0;
+
   //Array of Color Objects
   colorPrompts = [
+    red = {
+      colorBoxColor: "green",
+      hint: "red light, ___ light (means go when driving)"
+      },
     burlywood = {
       colorBoxColor:"burlywood",
       hint:"Rhymes with Twirly Hood"
@@ -34,10 +39,6 @@ $(document).ready(function(){
     gainsboro = {
       colorBoxColor:"gainsboro",
       hint:"gainsboro"
-    },
-    end = {
-      colorBoxColor: "white",
-      hint: "You have reached the end of the quiz"
     }
   ];
 
@@ -48,8 +49,13 @@ $(document).ready(function(){
 
   //iterate through array
   function next(i){
+    if (i < colorPrompts.length){
   $("#colorBox").css("background", colorPrompts[i].colorBoxColor)
   $(".hintDisplay").html(colorPrompts[i].hint)
+  }
+    if (i == colorPrompts.length){
+      alert("you have reached the end of the Quiz!, you got "+ correct + "of "+ i + "correct!")
+    }
   }
 
   //Length of Question Array for Number of Questions
@@ -89,5 +95,5 @@ $(document).ready(function(){
     $(".hintDisplay").toggle();
     $(".answer").val("");
   });
-
+  //when one gets all correct
 });
