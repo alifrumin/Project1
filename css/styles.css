@@ -2,14 +2,14 @@
 
 #colorBox {
   border: 3px solid black;
-  height: 50px;
-  width: 50px;
-  /*background: orange;*/
+  height: 150px;
+  width: 150px;
   margin: 20px;
   margin-left: auto ;
   margin-right: auto ;
-
+  border-radius: 50%;
 }
+
 h1 {
   text-align: center;
 }
@@ -24,8 +24,16 @@ h3 {
 
 .hintDisplay {
   display: none;
+  color: black;
+  font-family: sans-serif;
+  padding: 10px;
 }
+
 
 .question {
   text-align: center;
+}
+
+a {
+  display: block;
 }
