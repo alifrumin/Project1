@@ -58,6 +58,7 @@ $(document).ready(function(){
     {console.log(colorPrompts[i].colorBoxColor);
     i++;
     next(i);
+    $("#answeredQuestions").html(i);
     //+1 to #correctQuestions
     //+1 to #answeredQuestions
     }
