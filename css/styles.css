@@ -1,31 +1,41 @@
 
-
+.container {
+  margin: 10px;
+}
 #colorBox {
   border: 3px solid black;
-  height: 50px;
-  width: 50px;
-  /*background: orange;*/
+  height: 150px;
+  width: 150px;
   margin: 20px;
   margin-left: auto ;
   margin-right: auto ;
-
+  border-radius: 50%;
 }
+
+.hintSpace {
+  height: 50px;
+}
+
+.hintDisplay {
+  display: none;
+  color: black;
+  padding: 10px;
+}
+
+.question {
+  text-align: center; i
+}
+
+.question a {
+  display: block;
+  margin: 10px;
+}
+
 h1 {
   text-align: center;
 }
 
 h4 {
   margin: 0;
-}
-
-h3 {
-
-}
-
-.hintDisplay {
-  display: none;
-}
-
-.question {
-  text-align: center;
+  display: inline;
 }

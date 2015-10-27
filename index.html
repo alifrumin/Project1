@@ -9,22 +9,29 @@
 </head>
 <body>
   <div class="container">
-	<h1>HTML Color Names Quiz</h1>
-	<h4 id="totalQuestions">Number of Questions:  </h4>
-	<h4 id="answeredQuestions">Number of Questions you have answered:  </h4>
-	<h4 id="correctQuestions">Number of Questions you have gotten correct: </h4>
+	<h1>CSS3 Color Keyword Quiz</h1>
+	<p>One can use Hex Values or RGB Values to display millions of colors in CSS3 but only 147 colors can be called using a keyword. Want to test your CSS3 colors? Enter your best guess in the input box below and hit submit. If you are struggling and need some help hit the hint button or the link below it to see a full list of CSS3 color names. If you would like to move to the next question hit the skip button. When you reach the end of the quiz an alert will let you know how you did (you can also see your progress in the bottom left hand corner).</p>
     <div class="question">
       <h3>Name the color below:</h3>
       <div id="colorBox"></div>
-			<div class="hintDisplay">
-				<!-- <p>"Hint: is a fruit and a color"</p> -->
+				<div class="hintSpace">
+				<div class="hintDisplay">
+					<!-- <p>"Hint: is a fruit and a color"</p> -->
+				</div>
 			</div>
       <input class="answer" type="text" placeholder="guess here...">
       <button class="submit">Submit</button>
       <button class="hintButton">Hint</button>
 			<button class="skip">Skip</button>
-
-    </div>
+			<a href="http://html-color-codes.info/color-names/">Click here for a full list of CSS3 color keywords</a>
+	  </div>
+		<h4 id="answeredQuestions">Correct: 0</h4>
+		<h4 id="totalQuestions"></h4>
   </div>
 </body>
 </html>
+
+<!--Things to do:
+3. animate toggle?
+6. Add more colorPrompts
+7.  -->
