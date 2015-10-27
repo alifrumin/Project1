@@ -49,7 +49,7 @@ $(document).ready(function(){
   }
 
   //Length of Question Array for Number of Questions
-  $("#totalQuestions").append(colorPrompts.length);
+  $("#totalQuestions").append(" of " + colorPrompts.length);
 
   //check answer on submit
   $(".submit").on("click", function(){
@@ -58,7 +58,7 @@ $(document).ready(function(){
     {console.log(colorPrompts[i].colorBoxColor);
     i++;
     next(i);
-    $("#answeredQuestions").html(i);
+    $("#answeredQuestions").html("<h4>Correct: </h4>" + i);
     //+1 to #correctQuestions
     //+1 to #answeredQuestions
     }

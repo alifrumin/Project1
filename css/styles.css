@@ -16,6 +16,7 @@ h1 {
 
 h4 {
   margin: 0;
+  display: inline;
 }
 
 h3 {
@@ -25,10 +26,8 @@ h3 {
 .hintDisplay {
   display: none;
   color: black;
-  font-family: sans-serif;
   padding: 10px;
 }
-
 
 .question {
   text-align: center;
@@ -36,4 +35,10 @@ h3 {
 
 a {
   display: block;
+}
+
+#answeredQ {
+  display: inline;
+  padding: 0;
+  margin: 0;
 }
