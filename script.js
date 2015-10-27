@@ -1,6 +1,6 @@
 $(document).ready(function(){
   i=0;
-
+  correct=0;
   //Array of Color Objects
   colorPrompts = [
     burlywood = {
@@ -34,7 +34,11 @@ $(document).ready(function(){
     gainsboro = {
       colorBoxColor:"gainsboro",
       hint:"gainsboro"
-      }
+    },
+    end = {
+      colorBoxColor: "white",
+      hint: "You have reached the end of the quiz"
+    }
   ];
 
   //start
@@ -58,9 +62,12 @@ $(document).ready(function(){
     {console.log(colorPrompts[i].colorBoxColor);
     i++;
     next(i);
-    $("#answeredQuestions").html("<h4>Correct: </h4>" + i);
-    //+1 to #correctQuestions
+    // $(".hintDisplay").toggle();
+    correct++;
+    $("#answeredQuestions").html("<h4>Correct: </h4>" + correct);
+    $(".answer").val("");
     //+1 to #answeredQuestions
+
     }
     else
     // (($(".answer").val()) !== (colorPrompts[i].colorBoxColor))
@@ -79,6 +86,8 @@ $(document).ready(function(){
   $(".skip").on("click", function(){
     i++;
     next(i);
+    $(".hintDisplay").toggle();
+    $(".answer").val("");
   });
 
 });
