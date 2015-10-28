@@ -48,14 +48,14 @@ $(document).ready(function(){
 
   //start
   $("#colorBox").css("background", colorPrompts[i].colorBoxColor)
-  $(".hintDisplay").html(colorPrompts[i].hint)
+  $(".hintDisplay").html("<p>Hint: " + colorPrompts[i].hint + "</p>")
   console.log(colorPrompts[i]);
 
   //iterate through array
   function next(i){
     if (i < colorPrompts.length){
   $("#colorBox").css("background", colorPrompts[i].colorBoxColor);
-  $(".hintDisplay").html(colorPrompts[i].hint);
+  $(".hintDisplay").html("<p>Hint: " + colorPrompts[i].hint + "</p>");
 }
     //when one gets to the end of the Quiz
     if (i >= colorPrompts.length){
@@ -70,7 +70,7 @@ $(document).ready(function(){
   //check answer on submit
   $(".submit").on("click", function(){
     if
-    (($(".answer").val()) === (colorPrompts[i].colorBoxColor))
+    ((($(".answer").val()).toLowerCase()) === (colorPrompts[i].colorBoxColor))
     {console.log(colorPrompts[i].colorBoxColor);
     i++;
     next(i);
@@ -82,7 +82,7 @@ $(document).ready(function(){
     }
     else
     {console.log("incorrect, try the Hint!");
-    $(".helpDisplay").html("<p>Incorrect, try again, and be sure to use all lowercase letters and no spaces.</p>");
+    $(".helpDisplay").html("<p>Incorrect :( try again, remember no spaces and use the hint.</p>");
     }
   });
 

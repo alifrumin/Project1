@@ -11,8 +11,7 @@ When you get to the end of the array it displays a this is the end message. It t
 Installation Instructions: I got it up on github pages so one can visit it there.
 
 Unsolved Problems:
-1. it only works when you answer in all lowercase... Im working on making it to you can use different capitalization
-2. I created space for the hint so that the formatting doesn't change when you display the hint but haven't got it to work for the help.
+1. I created an array of objects but because I only have two things in the array and one of them is the same as the name of the Array its not super dry... but I wanted to experiment with the objects in an array concept and theoretically I could add other things to them
 3. Im working on some animation... of the text that it doesn't just pop up on the page. 
 
 User Stories:
