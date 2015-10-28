@@ -12,6 +12,10 @@
   border-radius: 50%;
 }
 
+p #colorBox {
+  position: relative;
+}
+
 .hintSpace {
   height: 50px;
 }

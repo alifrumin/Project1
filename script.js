@@ -52,9 +52,10 @@ $(document).ready(function(){
     if (i < colorPrompts.length){
   $("#colorBox").css("background", colorPrompts[i].colorBoxColor)
   $(".hintDisplay").html(colorPrompts[i].hint)
-  }
-    if (i == colorPrompts.length){
-      alert("you have reached the end of the Quiz!, you got "+ correct + "of "+ i + "correct!")
+};
+    //when one gets to the end of the Quiz
+    if (i > colorPrompts.length){
+      $("#colorBox").html("<p>You have reached the end of the Quiz!</p>");
     }
   }
 
@@ -95,5 +96,5 @@ $(document).ready(function(){
     $(".hintDisplay").toggle();
     $(".answer").val("");
   });
-  //when one gets all correct
+
 });
