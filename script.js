@@ -8,6 +8,10 @@ $(document).ready(function(){
       colorBoxColor: "green",
       hint: "red light, ___ light (means go when driving)"
       },
+    lemonchiffon = {
+      colorBoxColor: "lemonchiffon",
+      hint: "citrus fruit + fabric"
+      },
     burlywood = {
       colorBoxColor:"burlywood",
       hint:"Rhymes with Twirly Hood"
@@ -50,14 +54,14 @@ $(document).ready(function(){
   //iterate through array
   function next(i){
     if (i < colorPrompts.length){
-  $("#colorBox").css("background", colorPrompts[i].colorBoxColor)
-  $(".hintDisplay").html(colorPrompts[i].hint)
-};
+  $("#colorBox").css("background", colorPrompts[i].colorBoxColor);
+  $(".hintDisplay").html(colorPrompts[i].hint);
+}
     //when one gets to the end of the Quiz
-    if (i > colorPrompts.length){
+    if (i >= colorPrompts.length){
       $("#colorBox").html("<p>You have reached the end of the Quiz!</p>");
     }
-  }
+  };
 
   //Length of Question Array for Number of Questions
   $("#totalQuestions").append(" of " + colorPrompts.length);
@@ -69,32 +73,29 @@ $(document).ready(function(){
     {console.log(colorPrompts[i].colorBoxColor);
     i++;
     next(i);
-    // $(".hintDisplay").toggle();
+    $(".hintDisplay").hide();
     correct++;
     $("#answeredQuestions").html("<h4>Correct: </h4>" + correct);
     $(".answer").val("");
-    //+1 to #answeredQuestions
-
+    $(".helpDisplay").html("");
     }
     else
-    // (($(".answer").val()) !== (colorPrompts[i].colorBoxColor))
     {console.log("incorrect, try the Hint!");
-    //+1 to #answeredQuestions
-    //move to next item in Array
+    $(".helpDisplay").html("<p>Incorrect, try again, and be sure to use all lowercase letters and no spaces.</p>");
     }
   });
 
   //Display Hint when Hint Button Clicked
   $(".hintButton").on("click", function(){
-    $(".hintDisplay").toggle()
+    $(".hintDisplay").show();
   });
 
   //Skip button
   $(".skip").on("click", function(){
     i++;
     next(i);
-    $(".hintDisplay").toggle();
+    $(".hintDisplay").hide();
     $(".answer").val("");
+    $(".helpDisplay").html("");
   });
-
 });

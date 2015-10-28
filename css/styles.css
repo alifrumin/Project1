@@ -17,7 +17,16 @@ p #colorBox {
 }
 
 .hintSpace {
-  height: 50px;
+  height: 20px;
+}
+
+.helpSpace {
+  height: 20px;
+}
+
+.helpDisplay {
+  padding: 0px;
+  margin: 0px;
 }
 
 .hintDisplay {
@@ -27,7 +36,7 @@ p #colorBox {
 }
 
 .question {
-  text-align: center; i
+  text-align: center;
 }
 
 .question a {
