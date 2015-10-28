@@ -25,6 +25,7 @@
 
 .helpSpace {
   height: 20px;
+  padding: 20px;
 }
 
 .helpDisplay {
@@ -34,7 +35,6 @@
 
 .hintDisplay {
   display: none;
-  color: black;
   padding: 10px;
 }
 
