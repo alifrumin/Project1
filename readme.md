@@ -12,7 +12,9 @@ Installation Instructions: I got it up on github pages so one can visit it there
 
 Unsolved Problems:
 1. I created an array of objects but because I only have two things in the array and one of them is the same as the name of the Array its not super dry... but I wanted to experiment with the objects in an array concept and theoretically I could add other things to them
-3. Im working on some animation... of the text that it doesn't just pop up on the page.
+2. Im working on some animation... of the text that it doesn't just pop up on the page.
+3. I want to an error message for when nothing is entered into the text box which is different from when it is wrong.
+
 
 User Stories:
 1. As a user I should be able to input my answer so that the computer can tell me if I am right
