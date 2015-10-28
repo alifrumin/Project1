@@ -60,6 +60,7 @@ $(document).ready(function(){
     //when one gets to the end of the Quiz
     if (i >= colorPrompts.length){
       $("#colorBox").html("<p>You have reached the end of the Quiz!</p>");
+      $("#colorBox").css("background", "black");
     }
   };
 
