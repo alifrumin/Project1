@@ -59,8 +59,9 @@ $(document).ready(function(){
 }
     //when one gets to the end of the Quiz
     if (i >= colorPrompts.length){
-      $("#colorBox").html("<p>You have reached the end of the Quiz!</p>");
+      $("#colorBox").html("<p>You have reached the end of the Quiz! You got " + correct + " of " + colorPrompts.length + " correct.</p>");
       $("#colorBox").css("background", "black");
+      $(".container").css("background", "yellow");
     }
   };
 
