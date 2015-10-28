@@ -4,7 +4,7 @@ $(document).ready(function(){
 
   //Array of Color Objects
   colorPrompts = [
-    red = {
+    green = {
       colorBoxColor: "green",
       hint: "red light, ___ light (means go when driving)"
       },
@@ -41,7 +41,7 @@ $(document).ready(function(){
       hint:"pale as a ghost"
       },
     gainsboro = {
-      colorBoxColor:"gainsboro",
+      colorBoxColor:"____boro",
       hint:"gainsboro"
     }
   ];
@@ -61,7 +61,7 @@ $(document).ready(function(){
     if (i >= colorPrompts.length){
       $("#colorBox").html("<p>You have reached the end of the Quiz! You got " + correct + " of " + colorPrompts.length + " correct.</p>");
       $("#colorBox").css("background", "black");
-      $(".container").css("background", "yellow");
+      $("#colorBox").css("border", "3px solid yellow");
     }
   };
 

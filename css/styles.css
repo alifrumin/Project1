@@ -24,6 +24,10 @@ a:hover {
   color: tomato;
 }
 
+span {
+  font-weight: bold;
+}
+
 button {
   background-color: black;
   color: white;
@@ -60,9 +64,9 @@ input:focus {
 }
 
 #colorBox p {
-  color: white;
+  color: ghostwhite;
   font-size: 20px;
-  padding: 20px;
+  padding: 28px;
 }
 
 /*hint display formatting*/
