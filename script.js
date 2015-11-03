@@ -43,7 +43,7 @@ $(document).ready(function(){
     gainsboro = {
       colorBoxColor:"____boro",
       hint:"gainsboro"
-    }
+    }//(ERICA) Are color and hint reversed for this one??
   ];
 
   //start
@@ -100,4 +100,5 @@ $(document).ready(function(){
     $(".answer").val("");
     $(".helpDisplay").html("");
   });
+  //One way to make this even DRY-er would be to pull out the lines of code that are repeated in both Skip and Submit, and wrap them in a function that can be called in both, similar to next.
 });
