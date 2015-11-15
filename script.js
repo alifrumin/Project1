@@ -8,6 +8,10 @@ $(document).ready(function(){
       colorBoxColor: "green",
       hint: "red light, ___ light (means go when driving)"
       },
+      lime = {
+        colorBoxColor: "lime",
+        hint: "green citrus fruit"
+        },
     lemonchiffon = {
       colorBoxColor: "lemonchiffon",
       hint: "citrus fruit + fabric"
