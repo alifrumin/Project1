@@ -119,4 +119,14 @@ $(".answer").keypress(function(e) { if (e.which == 13) {
     $(".answer").val("");
     $(".helpDisplay").html("");
   });
+
+  //restart
+  $(".restart").on("click", function (){
+    i=0;
+    correct=0;
+    $("#colorBox").css("background", colorPrompts[i].colorBoxColor)
+    $(".hintDisplay").html("<p>Hint: " + colorPrompts[i].hint + "</p>")
+    $("#answeredQuestions").html("<h4>Correct: </h4>" + correct);
+    console.log(colorPrompts[i]);
+  });
 });
