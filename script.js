@@ -63,7 +63,7 @@ $(document).ready(function(){
 }
     //when one gets to the end of the Quiz
     if (i >= colorPrompts.length){
-      $("#colorBox").html("<p>You have reached the end of the Quiz! You got " + correct + " of " + colorPrompts.length + " correct.</p>");
+      $("#colorBox").html("<p>You have reached the end of the Quiz! See score below.");
       $("#colorBox").css("background", "black");
       $("#colorBox").css("border", "3px solid yellow");
     }
@@ -131,6 +131,9 @@ $(".answer").keypress(function(e) { if (e.which == 13) {
     $("#colorBox").css("background", colorPrompts[i].colorBoxColor)
     $(".hintDisplay").html("<p>Hint: " + colorPrompts[i].hint + "</p>")
     $("#answeredQuestions").html("<h4>Correct: </h4>" + correct);
+    $("#colorBox").html("");
+    $("#colorBox").css("border", "3px solid black");
+
     console.log(colorPrompts[i]);
   });
 });
