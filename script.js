@@ -41,7 +41,7 @@ $(document).ready(function(){
       hint:"pale as a ghost"
       },
     gainsboro = {
-      colorBoxColor:"____boro",
+      colorBoxColor:"gainsboro",
       hint:"gainsboro"
     }
   ];
@@ -86,6 +86,25 @@ $(document).ready(function(){
     $(".helpDisplay").html("<p>Incorrect :( try again, remember no spaces and use the hint.</p>");
     }
   });
+
+// on enter
+$(".answer").keypress(function(e) { if (e.which == 13) {
+  if
+    ((($(".answer").val()).toLowerCase()) === (colorPrompts[i].colorBoxColor))
+    {console.log(colorPrompts[i].colorBoxColor);
+    i++;
+    next(i);
+    $(".hintDisplay").hide();
+    correct++;
+    $("#answeredQuestions").html("<h4>Correct: </h4>" + correct);
+    $(".answer").val("");
+    $(".helpDisplay").html("");
+    }
+    else
+    {console.log("incorrect, try the Hint!");
+    $(".helpDisplay").html("<p>Incorrect :( try again, remember no spaces and use the hint.</p>");
+    }
+  }});
 
   //Display Hint when Hint Button Clicked
   $(".hintButton").on("click", function(){

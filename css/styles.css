@@ -1,10 +1,20 @@
+
 /*basic page formatting*/
 .container {
-  margin: 20px;
+  position: fixed;
+  width: 80%;
+  left: 10%;
+  top: 40px;
+  /*z-index: 100;*/
+  border-top: 0;
+  background-color: white;
+  /*padding: 20px;*/
 }
 
 h1 {
   text-align: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1:hover {
