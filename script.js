@@ -69,7 +69,7 @@ $(document).ready(function(){
   $("#totalQuestions").append(" of " + colorPrompts.length);
 
   //check answer on submit
-  $(".submit").on("click", function(){
+  $(".submit").on("click", function (){
     if
     ((($(".answer").val()).toLowerCase()) === (colorPrompts[i].colorBoxColor))
     {console.log(colorPrompts[i].colorBoxColor);
