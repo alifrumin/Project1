@@ -1,10 +1,11 @@
-/*basic page formatting*/
 .container {
-  margin: 20px;
+  padding: 50px;
 }
 
 h1 {
   text-align: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1:hover {
