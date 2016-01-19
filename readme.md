@@ -1,4 +1,4 @@
-Self-scoring Trivia... guess Html color names
+Self-scoring Trivia... guess Html color s
 
 Technologies used: I set up trivia using jquery and javascript
 
@@ -11,7 +11,7 @@ When you get to the end of the array it displays a this is the end message. It t
 Installation Instructions: I got it up on github pages so one can visit it there.
 
 Unsolved Problems:
-1. I created an array of objects but because I only have two things in the array and one of them is the same as the name of the Array its not super dry... but I wanted to experiment with the objects in an array concept and theoretically I could add other things to them
+1. I created an array of objects but because I only have two things in the array and one of them is the same as the  of the Array its not super dry... but I wanted to experiment with the objects in an array concept and theoretically I could add other things to them
 2. Im working on some animation... of the text that it doesn't just pop up on the page.
 3. I want to an error message for when nothing is entered into the text box which is different from when it is wrong.
 
