@@ -1,5 +1,7 @@
 .container {
-  padding: 50px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -112,4 +114,8 @@ input:focus {
 /*hover states*/
 a:hover {
   color: tomato;
+}
+
+.score {
+  padding: 20px;
 }
